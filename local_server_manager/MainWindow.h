@@ -14,7 +14,7 @@
 // +-------------------------[ Other ]---------------------------+
 
 
-#define WINDOW_WIDTH 300
+#define WINDOW_WIDTH 700
 #define WINDOW_HEIGHT 500
 
 #pragma warning(disable : 4828)
@@ -64,9 +64,16 @@ public:
       }
       });
 
-
   }
 
+  void paintEvent(QPaintEvent* paint_event) override
+  {
+    QPainter MainWidget_painter(this);
+
+    MainWidget_painter.setBrush(QColor(255, 255, 255, 255));
+    MainWidget_painter.drawRect(QRect(0, 0, this->width(), this->height()));
+
+  }
 
   void keyPressEvent(QKeyEvent* event) override
   {
