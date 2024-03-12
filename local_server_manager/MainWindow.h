@@ -1,7 +1,7 @@
 #pragma once
 
 // +-------------------------[ Content ]-------------------------+
-#include "MainPage.h"
+#include "SettingsPage.h"
 
 // +-------------------------[ Qt Lib ]--------------------------+
 #include <QtWidgets/QMainWindow>
@@ -47,7 +47,7 @@ public:
     infoAction = trayIconMenu->addAction("Settings");
     connect(infoAction, &QAction::triggered, [this]() {
       this->show();
-      m_MainPage = new MainPage(this);
+      m_MainPage = new SettingsPage(this);
       m_MainPage->move(0, 0);
       m_MainPage->resize(this->width(), this->height());
       m_MainPage->Init();
@@ -121,7 +121,7 @@ public:
   }
 
 
-  MainPage* m_MainPage;
+  SettingsPage* m_MainPage;
 
   bool              m_IsLeftMButtonPressed; /*    [Handle for mouse]    */
   QPoint            m_LastMousePosition;    /* [Handle mouse position]  */

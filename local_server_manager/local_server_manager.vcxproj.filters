@@ -24,7 +24,7 @@
     <QtMoc Include="MainWindow.h">
       <Filter>src</Filter>
     </QtMoc>
-    <QtMoc Include="MainPage.h">
+    <QtMoc Include="SettingsPage.h">
       <Filter>src</Filter>
     </QtMoc>
   </ItemGroup>
