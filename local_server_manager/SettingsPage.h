@@ -22,7 +22,7 @@
 #include <QIcon>
 #include <QDebug>
 #include <QMessageBox>
-#include <QLineEdit>
+#include <QLineEdit>é
 #include <QRadioButton>
 #include <QCheckBox>
 #include <QErrorMessage>
